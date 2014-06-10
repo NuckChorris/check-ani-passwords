@@ -14,7 +14,7 @@ get '/' do
   haml :root
 end
 post '/' do
-  if redis.sismember("EMAIL", params[:username])
+  if redis.sismember("EMAIL", params[:email])
     haml :bad
   else
     haml :good
