@@ -1,5 +1,8 @@
 %div
   %h1 Check yo' password
-  %h2 For the recent MAL+AniDB+MT+ANN leak
-  %input{:name => 'email', :placeholder => 'Email'}
-  %button BELIEVE IT!
+  %h2 For the recent MangaTraders hack
+  %form{:method => "POST", :action => "/"}
+    %input{:type => "email", :name => 'email', :placeholder => 'Email'}
+    %input{:type => "submit", :value => "BELIEVE IT!"}
+  %footer
+    %p Brought to you by <a href="http://hummingbird.me/users/nuck">Nuck</a>

@@ -1,4 +1,8 @@
-body {
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
   display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -9,4 +13,7 @@ body {
 }
 h1, h2 {
 	font-family: inherit;
+}
+input {
+	font-size: 2em;
 }
