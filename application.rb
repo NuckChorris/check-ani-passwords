@@ -4,7 +4,7 @@ require 'haml'
 require 'sinatra'
 require 'redis'
 
-redis = Redis.new(:url => ENV["REDISTOGO_URL"])
+redis = Redis.new(:url => ENV["REDIS_URL"])
 
 configure do
   set :views, File.join(File.dirname(__FILE__), "views")
